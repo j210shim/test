@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+        function sum() {
+
+            var num1 = parseInt(form.a.value);//元のままでは文字列として受け取るため、計算ができない。
+            var num2 = parseInt(form.b.value);//a,bのそれぞれの文字列を数字として受け取ることで計算を可能にする。
+
+            form.c.value = num1 + num2;//a,bの数字を計算する。
+        }
+    </script>
+</head>
+
+<body>
+    2つの数の和を求めます。
+    <br>
+    <form name="form">
+        <input type="text" name="a" size=10><br>
+        <input type="text" name="b" size=10><br>
+        <input type="button" value="合計" onclick="sum()"><br>
+        <input type="text" name="c" size=10><br>
+    </form>
+</body>
+
+</html>

@@ -6,8 +6,8 @@
     <script type="text/javascript">
         function sum() {
 
-            var num1 = parseInt(form.a.value);//元のままでは文字列として受け取るため、計算ができない。
-            var num2 = parseInt(form.b.value);//a,bのそれぞれの文字列を数字として受け取ることで計算を可能にする。
+            var num1 = parseFloat(form.a.value);//元のままでは文字列として受け取るため、計算ができない。
+            var num2 = parseFloat(form.b.value);//a,bのそれぞれの文字列を数字として受け取ることで計算を可能にする。
 
             form.c.value = num1 + num2;//a,bの数字を計算する。
         }
